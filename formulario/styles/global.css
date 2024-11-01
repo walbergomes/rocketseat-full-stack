@@ -20,7 +20,8 @@
 
   --stroke-default: #D6D3D1;
   --stroke-highlight: #F3541C;
-  --stroke-error: #DC2626;
+
+  --semantic-error: #DC2626;
 }
 
 body {
