@@ -29,6 +29,18 @@ body {
 
   font: var(--text);
   color: var(--text-secundary);
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--stroke-default);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--stroke-highlight);
+  }
 }
 
 h1, h2 {
