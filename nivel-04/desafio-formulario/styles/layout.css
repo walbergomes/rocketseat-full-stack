@@ -1,0 +1,43 @@
+#app {
+  display: grid;
+  grid-template-columns: 34% 66%;
+  height: 100vh;
+
+  background-color: var(--shape-background);
+
+  overflow: hidden;
+}
+
+aside {
+  padding: 1.25rem;
+
+  & .aside-container {
+    background-image: url(../assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+    border-radius: .75rem;
+
+    padding: 2rem;
+
+    & img {
+      width: 2.8rem;
+    }
+
+    & h1 {
+      font: var(--text-logo);
+      color: var(--pink);
+    }
+
+    & p {
+      color: var(--text-heading);
+      font-weight: 300;
+    }
+  }
+}
+
+main {
+  padding: 1.25rem;
+}
