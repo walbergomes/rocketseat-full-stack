@@ -1,0 +1,53 @@
+input, textarea, select {
+  appearance: none;
+  width: 100%;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+
+  padding: .75rem 1rem;
+
+  background-color: var(--input-base);
+  color: #FFFFFF;
+  font: var(--text-body-sm);
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  font: var(--text-body-sm);
+  color: var(--text-body-color);
+
+  display: block;
+  margin-bottom: .75rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus
+input[type="date"]:focus-within {
+  outline: 2px solid var(--brand-light);
+
+  outline-offset: .1px;
+}
+
+input[type="date"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+  }
+
+}
+
+.about > .flex {
+  gap: 1.25rem;
+}

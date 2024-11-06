@@ -40,4 +40,12 @@ aside {
 
 main {
   padding: 1.25rem;
+  overflow: auto;
+
+  & .main-container{
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+
+    padding: 5rem 8.125rem;
+  }
 }

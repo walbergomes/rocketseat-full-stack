@@ -11,8 +11,8 @@
 
   --text-logo: 400 2.5rem/1.5 var(--font-family-logo);
 
-  --text-heading-md: 700 1.75rem/1.5 var(--font-family-logo);
-  --text-heading-sm: 700 1.125rem/1.4 var(--font-family-logo);
+  --text-heading-md: 700 1.75rem/1.5 var(--font-family-heading);
+  --text-heading-sm: 700 1.125rem/1.4 var(--font-family-heading);
 
   --text-body: 400 1rem/1.5 var(--font-family-body);
   --text-body-sm: 400 .875rem/1.4 var(--font-family-body);
@@ -54,4 +54,17 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h2 {
+  font: var(--font-family-heading);
+  color: var(--text-heading);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
 }
