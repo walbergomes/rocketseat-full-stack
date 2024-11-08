@@ -44,3 +44,73 @@ input[type="radio"] {
     }
   }
 }
+
+.radios-colors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+}
+
+.radio-color {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  & label {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 5px solid var(--shape-button);
+  }
+
+  &:focus-within,
+  &:hover {
+
+    & label {
+      outline: 2px solid var(--brand-light);
+    }
+  }
+
+  & label[data-color="brand-light"] {
+    background-color: var(--brand-light);
+  }
+  
+  & label[data-color="navy"] {
+    background-color: var(--navy);
+  }
+
+  & label[data-color="purple"] {
+    background-color: var(--purple);
+  }
+
+  & label[data-color="fuschia"] {
+    background-color: var(--fuschia);
+  }
+
+  & label[data-color="pink"] {
+    background-color: var(--pink);
+  }
+
+  & label[data-color="danger"] {
+    background-color: var(--danger);
+  }
+
+  & label[data-color="orange"] {
+    background-color: var(--orange);
+  }
+
+  & label[data-color="yellow"] {
+    background-color: var(--yellow);
+  }
+
+  & label[data-color="lime"] {
+    background-color: var(--lime);
+  }
+
+  & label[data-color="green"] {
+    background-color: var(--green);
+  }
+
+  & label[data-color="cyan"] {
+    background-color: var(--cyan);
+  }
+
+}
