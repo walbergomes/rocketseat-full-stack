@@ -62,7 +62,8 @@ input[type="radio"] {
   }
 
   &:focus-within,
-  &:hover {
+  &:hover,
+  &:has(:checked) {
 
     & label {
       outline: 2px solid var(--brand-light);

@@ -21,7 +21,8 @@
       margin-bottom: .5rem;
     }
 
-    &:focus-within {
+    &:focus-within,
+    &:has(:checked) {
       border: 2px solid var(--brand-light);
     }
   }
