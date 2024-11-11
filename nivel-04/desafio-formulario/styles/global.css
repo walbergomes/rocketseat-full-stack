@@ -49,6 +49,18 @@
 
 body {
   font: var(--text-body);
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--shape-background);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--input-base);
+  }
 }
 
 img {
