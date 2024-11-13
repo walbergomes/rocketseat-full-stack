@@ -1,0 +1,38 @@
+input[type="file"] {
+  all: unset;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+
+input[type="file"]::file-selector-button {
+  display: none;
+}
+
+.file-wrapper {
+
+  & label {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  & svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  & path {
+    fill: var(--brand-light);
+  }
+}
+
+.file-inner {
+  display: flex;
+  gap: 0.75rem;
+
+  padding: 0.75rem;
+
+  background-color: var(--shape-button);
+  border-radius: 8px;
+}
