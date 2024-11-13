@@ -55,3 +55,12 @@ input[type="date"] {
 .customization > .flex {
   justify-content: space-between;
 }
+
+.contact > .flex {
+  gap: 1.25rem;
+}
+
+.contact {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--input-stroke);
+}
