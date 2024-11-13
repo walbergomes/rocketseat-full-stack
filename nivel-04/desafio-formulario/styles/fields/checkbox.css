@@ -24,7 +24,7 @@
 
   border-radius: 1.875rem;
 
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .slider::before {
@@ -39,7 +39,7 @@
   bottom: 0.2rem;
 
   background-color: var(--input-stroke);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider::before {
@@ -56,4 +56,43 @@ input:focus + .slider {
 
 input:checked + .slider:before {
   transform: translateX(1.9rem);
- }
+}
+
+.terms-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  gap: .75rem;
+  
+  align-items: flex-start;
+
+  & strong {
+    font-weight: 500;
+    color: var(--brand-light);
+  }
+}
+
+.terms-uploads {
+  display: flex;
+}
+
+.checkbox-wrapper {
+  position: relative;
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
+
+    background-image: url(../../assets/icons/checkbox.svg);
+    background-repeat: no-repeat;
+  }
+
+  &:has(:checked) .checkbox-image {
+    background-image: url(../../assets/icons/checkbox-checked.svg);
+  }
+}
