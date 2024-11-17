@@ -1,9 +1,3 @@
-#profile {
-  & .person-profile {
-    
-  }
-}
-
 @media (width >= 80em) {
   #profile {
   & .person-profile {
