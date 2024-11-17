@@ -1,0 +1,33 @@
+#profile {
+  & .person-profile {
+    
+  }
+}
+
+@media (width >= 80em) {
+  #profile {
+  & .person-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & .person {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    & .person-pic {
+      width: 11rem;
+      height: 11rem;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  & .description {
+    width: 24rem;
+  }
+}
+}
