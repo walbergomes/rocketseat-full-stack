@@ -1,3 +1,14 @@
+#profile {
+  background-color: var(--surface-color);
+  padding-bottom: 2rem;
+
+  & .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 @media (width >= 80em) {
   #profile {
   & .person-profile {
