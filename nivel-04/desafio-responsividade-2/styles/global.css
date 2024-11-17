@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --brand-color-light: #60A5FA;
+  --brand-color-dark: #1D4ED8;
+
+  --bg-color: #0F172A;
+  --stroke-color: #1E293B;
+
+  --text-color-primary: #F1F5F9;
+  --text-color-secondary: #CBD5E1;
+
+  --ff-sans: 'Archivo', system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-semi-bold: 600;
+  --fw-extra-bold: 800;
+
+  --fs-sm: .875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.5rem;
+
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  line-height: 1.6;
+  color: var(--text-color-primary);
+}
+
+body {
+  background-color: var(--bg-color);
+}
