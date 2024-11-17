@@ -1,5 +1,5 @@
 *,
-*::before, 
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -14,23 +14,29 @@
 }
 
 :root {
-  --brand-color: #EF5F4C;
+  --brand-color: #ef5f4c;
 
-  --bg-color: #FFFFFF;
-  --surface-color: #F5F5F5;
-  --skeleton-color: #D9D9D9;
+  --bg-color: #ffffff;
+  --surface-color: #f5f5f5;
+  --skeleton-color: #d9d9d9;
   --shape-transparency: rgba(255, 255, 255, 0.56);
 
   --text-color-primary: #313131;
-  --text-color-secondary: #6C6C6C;
+  --text-color-secondary: #6c6c6c;
 
   --ff-sans: "Poppins", system-ui, sans-serif;
   --fw-base: 400;
   --fw-bold: 700;
 
-  --fs-sm: .75rem;
-  --fs-md: .875rem;
+  --fs-sm: 0.75rem;
+  --fs-md: 0.875rem;
+  --fs-base: 1rem;
   --fs-lg: 2rem;
+
+  --px-base: 1rem;
+
+  --py-base: 1rem;
+  --py-lg: 2rem;
 }
 
 html {
@@ -51,7 +57,8 @@ h1 {
   line-height: 1.25;
 }
 
-p, span {
+p,
+span {
   font-size: var(--fs-md);
   color: var(--text-color-primary);
   line-height: 1.7;
@@ -59,9 +66,51 @@ p, span {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--text-color-secondary);
+}
+
+a:hover {
+  color: var(--brand-color);
+}
+
+a.explorer {
+  --bg-img: "";
+  background-image: var(--bg-img);
+
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  &[aria-label="explorer"] {
+    --bg-img: url(../assets/icons/MagnifyingGlass.svg);
+
+    &:hover {
+      --bg-img: url(../assets/icons/MagnifyingGlass-hover.svg);
+    }
+  }
 }
 
 ul[role="list"] {
   list-style: none;
+}
+
+.avatar-profile {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 50%;
+  }
+}
+
+@media (width >= 80em) {
+  :root {
+    --px-base: 2rem;
+
+    --py-base: 1.25rem;
+  }
 }
