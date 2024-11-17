@@ -10,8 +10,8 @@
   justify-content: center;
   width: fit-content;
 
-  border-radius: .5rem;
-  font: var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
+  border-radius: 0.5rem;
+  font: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
 
   cursor: pointer;
 
@@ -26,28 +26,32 @@
     var(--brand-color-primary) 100%
   );
   --btn-color: var(--surface-color);
+
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--btn-color);
 }
 
-.btn-sm{
+.btn-sm {
   font-size: var(--fs-sm);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
-.btn-md{
+.btn-md {
   font-size: var(--fs-base);
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
-.btn-lg{
+.btn-lg {
   font-size: 1.125rem;
   padding: 1rem 2rem;
 }
 
-.btn[aria-label] { 
+.btn[aria-label] {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
 
     border-radius: inherit;
@@ -64,5 +68,17 @@
 
     position: relative;
     z-index: 1;
+  }
+}
+
+@media (width >= 80em) {
+  .btn-sm {
+    font-size: var(--fs-base);
+    padding: 0.75rem 1.5rem;
+  }
+
+  .btn-md {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
   }
 }
