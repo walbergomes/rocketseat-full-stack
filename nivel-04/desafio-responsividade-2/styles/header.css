@@ -1,15 +1,17 @@
 header {
-  & > div {
+  & nav {
     justify-content: space-between;
-  }
 
-  & .container {
     & > a {
       text-transform: uppercase;
       font-weight: var(--fw-base);
       font-size: var(--fs-base);
 
       color: var(--brand-color-light);
+    }
+
+    & > div > a {
+      font-size: 1rem;
     }
   }
 }

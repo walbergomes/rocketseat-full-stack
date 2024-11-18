@@ -40,6 +40,12 @@
   display: none;
 }
 
+.separetor {
+  height: 1px;
+  width: 100%;
+  background-color: var(--stroke-color);
+}
+
 
 @media (width >= 80em) {
   .container {
