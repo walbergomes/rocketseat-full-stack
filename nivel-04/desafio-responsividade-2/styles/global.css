@@ -119,5 +119,8 @@ img {
 @media (width >= 80em) {
   :root {
     --py-base: 1.25rem;
+    --px-base: 2rem;
+
+    --fs-base: 1.5rem;
   }
 }
