@@ -22,12 +22,33 @@
   border: 3px solid teal;
 }
 
+.flex {
+  display: flex;
+}
 
+.items-center {
+  align-items: center;
+}
 
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-1\.5 {
+  gap: 1.5rem;
+}
+
+.desktop-only {
+  display: none;
+}
 
 
 @media (width >= 80em) {
   .container {
     --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
   }
 }
