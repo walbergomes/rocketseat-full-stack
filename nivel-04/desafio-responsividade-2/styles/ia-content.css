@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
 
+    margin-bottom: 2rem;
+
+
     & span {
       font-size: .875rem;
     }
@@ -11,6 +14,7 @@
   & .news-type-3 {
     display: flex;
     gap: 1rem;
+
 
     & img {
       width: 5rem;

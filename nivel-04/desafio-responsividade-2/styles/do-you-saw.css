@@ -1,0 +1,62 @@
+#do-you-saw {
+  & > img {
+    margin-top: 2rem;
+  }
+
+  & .separetor {
+    margin-top: 2rem;
+  }
+
+  & .flex {
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      font-size: 0.875rem;
+    }
+  }
+
+  & .news-type-4 {
+    display: flex;
+    gap: 1rem;
+
+    & img {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    & header {
+      margin-top: -0.3rem;
+
+      & span {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+      }
+
+      & h3 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3125rem;
+        max-height: 2.6875rem;
+        white-space: normal;
+        font-size: 1rem;
+
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  & .news-type-4 + .news-type-4 {
+    margin-top: 2rem;
+  }
+}
+
+@media (width >= 80em) {
+  #do-you-saw {
+    & > img {
+      margin-top: 0;
+    }
+  }
+}
