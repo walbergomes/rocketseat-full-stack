@@ -113,6 +113,7 @@ img {
   &::before {
     content: attr(aria-label);
     padding-right: .5rem;
+    font-size: .875rem;
   }
 
   &:hover {

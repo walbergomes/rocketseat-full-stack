@@ -1,6 +1,10 @@
 #most-read {
   & .container .flex {
     justify-content: space-between;
+
+    & span {
+      font-size: .875rem;
+    }
   }
 
   & .news-type-2 {
