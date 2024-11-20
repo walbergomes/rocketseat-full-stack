@@ -1,0 +1,36 @@
+#most-read {
+  & .container .flex {
+    justify-content: space-between;
+  }
+
+  & .news-type-2 {
+    position: relative;
+
+    & .tag {
+      position: absolute;
+      top: .5rem;
+      left: .5rem;
+    }
+  }
+
+  & .news-type-2 + .news-type-2 {
+    margin-top: 2rem;
+  }
+
+}
+
+@media (width >= 80em) {
+  #most-read {  
+    & .container .news {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    & .news-type-2 + .news-type-2 {
+      margin-top: 0;
+    }
+  }
+
+  
+}

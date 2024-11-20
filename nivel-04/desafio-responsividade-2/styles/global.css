@@ -94,8 +94,9 @@ img {
 
 .link-btn[aria-label] {
   position: relative;
+  margin-right: 1rem;
 
-  &::before {
+  &::after {
     position: absolute;
     content: "";
 
@@ -109,10 +110,28 @@ img {
     transform: translateY(-50%);
   }
 
-  &::after {
+  &::before {
     content: attr(aria-label);
-    padding-left: 1.5rem;
+    padding-right: .5rem;
   }
+
+  &:hover {
+    color: var(--brand-color-light);
+  }
+
+  &:hover::after {
+    background: url(../assets/icons/ArrowRight-hover.svg) center;
+  }
+}
+
+& span.tag {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .625rem;
+
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 @media (width >= 80em) {
