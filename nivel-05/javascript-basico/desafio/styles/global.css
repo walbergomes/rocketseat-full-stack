@@ -29,6 +29,8 @@
   --fs-sm: .875rem;
   --fs-base: 1rem;
   --fs-lg: 1.5rem;
+
+  --px-base: 2rem;
 }
 
 html {

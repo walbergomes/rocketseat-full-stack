@@ -1,0 +1,21 @@
+.container {
+  --max-width: 390px;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+  margin-inline: auto;
+
+  border: 3px solid salmon;
+}
+
+.only-desktop {
+  display: none;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+
+  .only-desktop {
+    display: initial;
+  }
+}
