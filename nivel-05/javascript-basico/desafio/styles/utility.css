@@ -33,8 +33,13 @@
 
 .flex-align {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
+  
+  & > button {
+    width: 100%;
+  }
 }
 
 @media (width >= 80em) {
@@ -44,5 +49,15 @@
 
   .only-desktop {
     display: initial;
+  }
+}
+
+@media (width >= 80em) {
+  .flex-align {
+    flex-direction: row;
+
+    & > button {
+      width: 10rem;
+    }
   }
 }
