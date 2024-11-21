@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>quicklist</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quicklist</title>
 
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-  <
-</body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/logo.svg" alt="logo" class="only-descktop" />
+
+      <main>
+        <button class="back-button">Voltar</button>
+
+        <h1>Compras da semana</h1>
+
+        <form>
+          <div class="flex-align">
+            <input type="text" placeholder="Adicione um novo item" />
+            <button class="btn-add">Adicionar Item</button>
+          </div>
+
+          <div class="list-to-buy">
+            <div class="new-item">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="item" id="item" />
+              <label for="item">Pão de forma</label>
+
+              <button type="button" class="delete-btn">
+                <img src="assets/icons/trash.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="removed-item">
+          <img src="assets/icons/warning-circle-filled.svg" alt="" />
+          O item foi removido da lista
+          <button class="btn-remove-alert">
+            <img src="assets/icons/delete-small.svg" alt="" />
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

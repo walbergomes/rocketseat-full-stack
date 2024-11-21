@@ -1,0 +1,149 @@
+main {
+  max-width: 39rem;
+  margin-inline: auto;
+
+  & h1 {
+    color: var(--content-primary);
+    margin: 1rem 0 2.75rem;
+    font-size: var(--fs-lg);
+  }
+}
+
+input {
+  width: 100%;
+  padding: 11px 18px;
+
+  border: 2px solid var(--border-primary);
+  border-radius: 12px;
+
+  height: 2.75rem;
+  line-height: 2.75rem;
+
+  font-size: 1rem;
+  font-family: var(--ff-sans);
+  color: var(--content-primary);
+
+  &::placeholder {
+    color: var(--content-tertiary);
+    font-size: 1rem;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-brand);
+  }
+}
+
+.btn-add {
+  height: 2.75rem;
+  white-space: nowrap;
+
+  background-color: var(--color-brand);
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 12px 24px;
+  color: var(--content-always-white);
+
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-sb);
+
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
+}
+
+.list-to-buy {
+  margin-top: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.new-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--bg-color-secondary);
+
+  padding: 16px 12px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  & label {
+    font-size: var(--fs-base);
+    font-weight: 20px;
+    color: var(--content-secondary);
+  }
+
+  & .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
+
+    background: url(../assets/icons/checkbox.svg) no-repeat center;
+
+    &:hover {
+      background: url(../assets/icons/checkbox-hover.svg) no-repeat center;
+    }
+  }
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+
+    margin-right: 3rem;
+  }
+
+  & :hover {
+    .checkbox-image {
+      background: url(../assets/icons/checkbox.svg) no-repeat center;
+    }
+  }
+
+  &:has(:checked) .checkbox-image {
+    background-image: url(../assets/icons/checbox-checked.svg);
+  }
+
+  & .delete-btn {
+    margin-left: auto;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.removed-item {
+  display: flex;
+  align-items: center;
+
+  margin-top: 3rem;
+
+  padding: 12px;
+  background-color: var(--color-danger);
+  border-radius: 12px;
+
+  color: var(--content-always-white);
+  font-weight: var(--fw-md);
+
+  & img {
+    margin-right: 8px;
+  }
+
+  & .btn-remove-alert {
+    display: flex;
+    align-items: center;
+
+    background: none;
+    border: none;
+
+    margin-left: auto;
+
+    cursor: pointer;
+  }
+}
