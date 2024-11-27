@@ -21,6 +21,8 @@ export class Database {
       this.database[table] = [data]
     }
 
+    this.persist()
+
   }
 
   select(table) {
