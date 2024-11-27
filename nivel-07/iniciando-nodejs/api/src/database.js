@@ -28,6 +28,6 @@ export class Database {
   }
 
   select(table) {
-    return this.database[table];
+    return this.database[table] ?? [];
   }
 }
