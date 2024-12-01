@@ -8,6 +8,15 @@
       "status": "open",
       "created_at": "2024-12-01T19:49:17.919Z",
       "updated_at": "2024-12-01T19:49:17.919Z"
+    },
+    {
+      "id": "bf5bb0af-c8e6-4a4f-8c55-5a5e502cb79f",
+      "equipament": "teclado",
+      "description": "quebrou",
+      "user_name": "Walber",
+      "status": "open",
+      "created_at": "2024-12-01T20:54:56.061Z",
+      "updated_at": "2024-12-01T20:54:56.061Z"
     }
   ]
 }
