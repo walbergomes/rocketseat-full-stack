@@ -8,6 +8,6 @@ export function routeHandler(request, response) {
   if(route) {
     return route.controller(request, response)
   }
-
+  // return 
   return response.writeHead(404).end()
 }
